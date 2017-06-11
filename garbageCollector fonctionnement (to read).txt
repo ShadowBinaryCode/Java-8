@@ -1,0 +1,6 @@
+/* ************* comprendre le fonctionnement du garbage collector **************** */
+*																					*
+*	regarde les pages de 124 jusqu'à 127											*									*
+*	algorithm : mark and sweep, stop and copy																				*
+*																					*
+/* ******************************************************************************** */

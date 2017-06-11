@@ -1,0 +1,18 @@
+- une interface constitue un contrat que la classe signe. la classe qui implémente cette interface
+s'engage à définir tout ce qui existe dans l'interface
+
+- l'interface c'est comme une classe abstraite, mais c plus pratique
+
+- une interface contient des constantes et des méthodes (que la signature)
+
+- c mieux d'écrire toujours des commentaires pour expliquer ce que les interfaces font exactement
+et les méthodes de cette interface
+
+- soit disant qu'on a 10 classes qui implémentent une interface "A", donc, ces 10 classes doivent implémenté l'ensemble des méthodes
+qui se trouvent dans l'inteface "A", maintenant, je veux rajouter deux autres méthodes dans l'interface "A" et je veux que ces 2 méthodes
+doivent être implémenté juste par 2 classes parmi les 10, le probleme c'est que si j'ajoute ces 2 méthodes, il faut que les 10 classes 
+implémentent ces 2 méthodes aussi, mais moi je veux que juste 2 classes qui doivent faire ça. donc, pour éviter les erreurs de compilations,
+on rajoute ces 2 méthodes dans l'interface "A" avec le mot clé "default", donc après, on va pas tomber dans un erreur de compilations,
+puisque maintenant, je peux implémenter ces 2 méthodes juste dans les classes que je veux parmi les 10.
+pour ajouter une méthode défault, il faut que la méthode contient un code d'implémentation par défaut, mais ce code c'est pas important, c juste
+pour la définition de la méthode dans l'interface, ces aux classes qui vont implémenté ces deux méthodes à redéfinir et implémenté le bon code.

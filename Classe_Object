@@ -1,0 +1,28 @@
+la classe object est une classe commun entre toutes les classes java, elle contient quelques
+méthodes intéréssantes comme : 
+
+--> hashcode : pour savoir l'adresse mémoire qui référence un objet
+
+--> clone : pour copier un objet, par défaut, si l'objet qu'on veut cloner contient des références vers
+d'autres objets, on garde les références des autres objets, sinon, si cette fonctionnemet
+ne me conviennent pas (ça dépend du projet), on clone aussi les autres objets
+
+--> equals : permet de comparer 2 instances d'une classe, par défaut, elle se base sur 
+les références (hashcode) pour faire la comparaison
+si on veut changer cette façon et utiliser notre criteres de comparaison, on rédéfinit la méthode
+"equals" dans la classe que je veux comparer
+
+pour avoir une cohérence entre equals et hashcode, il faut rédefinir la méthode hashCode
+pour quelle calcule le hashcode à partir des champs utilisés dans les critères de comparaison,
+
+c possible de ne pas casser la tête avec la redéfinition de la méthode hashCode, on la redéfinit
+juste pour être sur (donc c optionnelle)
+
+--> getClass : cette méthode retourne un objet de type Class qui contient les caratéristiques (
+attributs, méthodes, nom de la classe, nom de la classé mere, nom du package, ect) 
+de la classe à partir de laquelle l'objet a été crée
+
+--> toString : cette méthode return la définition d'un object sous format d'une chaine de caractere.
+
+il retourne par défaut le nom de classe + le hashcode
+on peut bien sûr redéfinir cette méthode, ce qui est recommendé

@@ -1,0 +1,38 @@
+- on peut faire l'héritage entre 2 classes, s'il ya une relation "est une sorte de" entre
+les 2 classes
+exemple : je peux faire l'héritage entre personne et client puisque le client est une sorte
+de personne
+
+- "super" et "this"
+
+- une classe abstraite est une classe qu'on peut pas l'instancier, elle est utilisé juste
+pour l'héritage.
+
+quand on a un ensemble de classe qui ont des fonctionnalités en commun, on utilise une classe
+abstraite qui contient les fonctionnalités en commun, donc les autres classes vont
+hériter de cette classe abstraite.
+
+une classe abstraite est une classe normal, il se peux que une classe abstraite ne contient pas
+une méthode abstraite, mais si on a une méthode abstraite, cette méthode doit obligatoirement
+existe dans une classe abstraite.
+
+- une classe final est une classe qu'on peut l'instancier mais on peut pas l'utiliser comme
+classe de base our l'héritage, comme par exemple la classe (objet) String
+on peut pas redéfinir une méthode final
+
+- quand on instance une classe, cette classe garde le même type jusqu'à la fin de sa vie.
+qu'on on parle de conversion de type, on parle pas de l'objet lui même mais de la façon
+avec laquelle on peut le manipuler.
+on fait ces convertions surtout quand on a une relation d'héritage.
+
+- si on a une méthode qui prend une variable de type Object comme parametre,
+public void essai(Object obj)
+si j'appelle cette méthode avec n'importe quelle classe différent de la classe Object,
+le compilteur va conciderer que la classe passé comme parametre est de type objet, car la jvm
+ne peut pas faire la différence
+exemple :
+Personne p = new Personne();
+essai(p);
+ici, la jvm va conciderer que p est toujours de type Object, donc pour résoudre ce probleme,
+on fait ce qu'on appelle le transtypage
+--> regarder la classe Lanceur dans le package convertionType

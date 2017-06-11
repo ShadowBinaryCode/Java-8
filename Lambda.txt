@@ -1,0 +1,22 @@
+- une expression lambda ressemble à une fonction mis à part qu'elle ne porte pas un nom.
+
+elle est constitué d'un couple de parenthéses contenant les eventuelles parametres suivi des caracteres -> et du bloc du code
+de l'epression delimité par des accolades
+
+exemple : (Object o1, Object o2) -> {
+
+}
+
+---> un element très important, pour utiliser une expression lambda, il faut que l'interface doit être fonctionnelle,
+c'est à dire contient une seule méthode 
+
+IL ya le package Java.util.function qui contient quelques interfaces plus interessant
+
+- l'expression lambda peut utiliser les variables dans le contexte dans laquelle elle est définie
+remarque très importante : l'expression lambda peut pas modifier les variables mais juste les utiliser
+
+---> lorsque l'expression lambda est trop volumineuse ou qu'elle doit être utilisée dans plusieurs endroit dans l'application,
+c mieux d'extraire le code de l'expression dans une fonction, et d'appeller tout simplement cette fonction dans le corps
+de lambda après. 
+il ya une autre façon pour appeller la fonction dans l'expression lambda, en utilisant ce qu'on appelle le "référence de méthode" :
+regarder la classe Lanceur.java dans le package lambda2

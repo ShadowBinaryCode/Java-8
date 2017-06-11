@@ -1,0 +1,24 @@
+- les types génériques sont les elements d'un programme qui s'adaptent automatiquement pour réaliser la même fonctionnalité
+sur différents types de données.
+
+- on vérifie le bon types de données à utiliser sur le type génériques au moment de la compilation
+
+- le type générique favorise le fonctionnement des algorithmes qui sont indépédants du type de données
+
+- ici on a le type génériques "ListeGenerique", un type générique peut être une classe, une interface ou une fonction
+ * le type de parametre c'est "T"
+ * le type d'argument c'est le type de données qui remplace le type de parametre lors de l'utilisatio du type générique
+ * les contraintes ce sont les ti que vous imposez pour limiter le type d'argument à utiliser
+ * type construit c'est la classe, l'interface ou la fontion qu'on construit à partir de la spécification d'un argument
+ 
+ --> une classe générique
+ une classe qui attend un type de paramètre est une classe générique
+ 
+ les types de paramètre sont representé par un caractere majuscule unique
+ 
+ - on peut spécifier des contraintes sur le type d'arguments à utiliser, par exemple, si on veut que le type dd'arguments hérite
+ une classe spécifique ou implémenter plusieurs interface, on utilise le mot "extends", il est valable pour les classes et les interfaces,
+ 	--> exemple : un type d'argument qui herite d'une classe par exemple "Personne"
+ 			public class listeGenerique<T extends Personne)
+ 	--> exemple 2 : un types generique qui herite la classe "Personne" et qui implémente les interfaces "Comparalbe" et "Cloneable"
+ 			public class listeGenerique<T extends Personne & Comparable & Cloneable)

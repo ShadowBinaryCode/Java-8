@@ -1,0 +1,13 @@
+- classesn imbriqués (assistantes) sont des classes déclarés à l'interieur d'une autre classe ou une méthode
+
+- les types des classes imbriqués : 
+
+	-> classe imbriqués statique : c'est une classe qui respecetent les mêmes régles des champs et attributs static
+	-> elle ne peut utilisé que les attributs et les méthodes static de sa classe container
+	-> elle peut être utilisé sans qu'il existe une instance de sa classe container
+	-> elle peut utiliser les instances de sa classe container seulement si la classe container est instancié
+	
+- les classes internes sont comme n'importe autre elements d'une classe (champs et méthodes), elles ont accés à tout les attributs
+et les méthodes de la classe container
+pour utiliser une classe Interne, on a besoin d'abord d'une instance de la classe container
+une classe interne est une classe sont le mot "static"

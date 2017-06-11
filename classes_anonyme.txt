@@ -1,0 +1,17 @@
+- une classe anonyme est une classe interne qui n'a pas de nom
+elle sont très utilisés lors de la gestion des actions des utilisateurs dans une application en mode graphique
+
+- une interface fonctionnelle est une interface qui ne contient que la définition d'une seule méthode
+
+- pour instancier une classe anonyme dans une fonction : 
+new "nom de la classe de base ou l'interface à implémenté" {
+	/*
+		int i, j;
+		public void méthode(int a) {
+		
+		}
+	*/
+}
+
+- le compilateur génére les classes anonymes aussi sous la forme : [classeContainer]$[ordre d'utilisation de classe anonyme]
+dans notre exemple, le compilateur va générer les 2 classes : Lanceur$1.class et Lanceur$2.class
